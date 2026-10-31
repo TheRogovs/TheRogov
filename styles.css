@@ -409,6 +409,31 @@ summary:focus-visible {
   gap: 9px;
 }
 
+.community-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button-secondary {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 14px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.button-secondary:hover {
+  background: var(--raised);
+  color: var(--white);
+}
+
 .button-primary {
   min-height: 46px;
   display: inline-flex;
@@ -850,9 +875,14 @@ summary:focus-visible {
 }
 
 .footer-copy,
+.footer-link,
 .footer-top {
   color: var(--quiet);
   font-size: 12px;
+}
+
+.footer-link:hover {
+  color: var(--white);
 }
 
 .footer-top {
@@ -1143,6 +1173,10 @@ summary:focus-visible {
     column-gap: 16px;
     row-gap: 5px;
     padding-block: 17px;
+  }
+
+  .footer-top {
+    margin-left: 0;
   }
 
   .footer-copy {
